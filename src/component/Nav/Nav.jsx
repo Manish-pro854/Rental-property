@@ -13,6 +13,7 @@ import { LuTentTree } from "react-icons/lu";
 import { GiWoodCabin } from "react-icons/gi";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { FaTreeCity } from "react-icons/fa6";
+import { Link, NavLink } from 'react-router-dom';
 
 
 function Nav() {
@@ -24,8 +25,8 @@ function Nav() {
   return (
     <div id='nav'>
       {visible?<div className="hamburger">
-        <div className="ham1">Login</div>
-        <div className="ham1">SignUp</div>
+        <Link to={"/Login"}><div className="ham1">Login</div></Link>
+        <Link to={"/Signup"}><div className="ham1">SignUp</div></Link>
         <div className="ham1">List your home</div>
         <div className="ham1">Help center</div>
       </div>:<div></div>}
@@ -33,10 +34,11 @@ function Nav() {
 
       <div className="nav1">
 
-        <div className="logo">
+        <Link to={""}><div className="logo">
           <img src={logo} alt="" width="50px"/>
           <h1>Private Property Rental</h1>
         </div>
+        </Link>
 
         <div className="search">
           <input type="text" placeholder='Search Destination'/>
@@ -56,8 +58,8 @@ function Nav() {
 
       </div>
       <div className="nav2">
-        <div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div>
-        <div className="svg11"><GiFamilyHouse /><h3>Houses</h3></div>
+        <NavLink to={""}><div className="svg11"><MdOutlineWhatshot /><h3>Trending</h3></div></NavLink>
+        <NavLink to={"/Houses"}><div className="svg11"><GiFamilyHouse /><h3>Houses</h3></div></NavLink>
         <div className="svg11"><MdBedroomParent /><h3>Rooms</h3></div>
         <div className="svg11"><PiFarm /><h3>Farm Houses</h3></div>
         <div className="svg11"><MdOutlinePool /><h3>Pool Houses</h3></div>
