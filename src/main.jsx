@@ -8,6 +8,8 @@ import Login from './component/Login/Login.jsx'
 import Signup from './component/Signup/Signup.jsx'
 import Houses from './component/Houses/Houses.jsx'
 import Listing from './component/Listing/Listing.jsx'
+import Usercontext from './Context/Usercontext.jsx'
+import Contact from './component/Contactus/Contact.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App/>}>
@@ -16,12 +18,15 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='Signup' element={<Signup/>}/>
     <Route path='Houses' element={<Houses/>}/>
     <Route path='Listing' element={<Listing/>}/>
+    <Route path='Contact' element={<Contact/>}/>
   </Route>
 
 ))
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Usercontext>
     <RouterProvider router ={router}/>
+    </Usercontext>
   </StrictMode>,
 )

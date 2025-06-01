@@ -1,15 +1,14 @@
-#listing{
+#contact{
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: white;
-  padding-top: 100px;
 }
 
-#listing form{
+#contact form{
   width: 70%;
   height: 100%;
   display: flex;
@@ -19,27 +18,27 @@
   gap: 10px;
 }
 
-#listingtitle{
+#contacttitle{
   font-size: 40px;
   font-weight: 300;
   color: black;
   margin-bottom: 20px;
 }
 
-#listing .list{
+#contact .list{
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
 }
 
-#listing .list label{
+#contact .list label{
   font-size: 20px;
   font-weight: 300;
   color: black;
 }
 
-#listing .list input{
+#contact .list input{
   width: 540%;
   padding: 3px;
   box-sizing: border-box;
@@ -50,18 +49,7 @@
   border: 1px solid rgb(71, 71, 70);
 }
 
-#listing .list .imginput{
-  width: 318%;
-  padding: 3px;
-  box-sizing: border-box;
-  outline: none;
-  font-size: 15px;
-  font-weight: 300;
-  color: black;
-  border: 1px solid rgb(71, 71, 70);
-}
-
-#listing .list textarea{
+#contact .list textarea{
   width: 600%;
   padding: 3px;
   box-sizing: border-box;
@@ -72,7 +60,7 @@
   border: 1px solid rgb(71, 71, 70);
 }
 
-#listbtn{
+#contactbtn{
    padding: 10px 40px 10px 40px;
   background-color: rgb(247, 8, 8);
   color: white;
@@ -86,7 +74,7 @@
   margin-top: 40px;
 }
 
-#list svg{
+#contactbtn svg{
   width: 20px;
   height: 20px;
   color: white;

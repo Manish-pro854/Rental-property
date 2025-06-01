@@ -28,7 +28,7 @@ function Nav() {
         <Link to={"/Login"}><div className="ham1">Login</div></Link>
         <Link to={"/Signup"}><div className="ham1">SignUp</div></Link>
         <Link to={"/Listing"}><div className="ham1">List your home</div></Link>
-        <div className="ham1">Help center</div>
+        <Link to={"/Contact"}><div className="ham1">Help center</div></Link>
       </div>:<div></div>}
 
 
