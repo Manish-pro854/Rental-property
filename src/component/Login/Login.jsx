@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Login.css"
+import { MdLogin } from "react-icons/md";
 
 function Login() {
   return (
@@ -20,7 +21,7 @@ function Login() {
         <input type="password" name="" id="pass" required/>
         </div>
 
-        <button id='loginbtn'>Login</button>
+        <button id='loginbtn'>Login<MdLogin /></button>
 
       </form>
     </div>

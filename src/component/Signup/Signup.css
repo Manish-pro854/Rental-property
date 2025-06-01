@@ -63,3 +63,9 @@
   border: none;
   margin-top: 40px;
 }
+
+#signupbtn svg{
+  width: 20px;
+  height: 20px;
+  color: white;
+}

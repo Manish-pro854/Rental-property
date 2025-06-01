@@ -27,7 +27,7 @@ function Nav() {
       {visible?<div className="hamburger">
         <Link to={"/Login"}><div className="ham1">Login</div></Link>
         <Link to={"/Signup"}><div className="ham1">SignUp</div></Link>
-        <div className="ham1">List your home</div>
+        <Link to={"/Listing"}><div className="ham1">List your home</div></Link>
         <div className="ham1">Help center</div>
       </div>:<div></div>}
 
@@ -46,7 +46,7 @@ function Nav() {
         </div>
 
         <div className="ham">
-          <button id='btn1'>List Your Home</button>
+          <Link to={"/Listing"}><button id='btn1'>List Your Home</button></Link>
           <button id='btn2' onClick={()=>{
             setVisible(prev=>!prev)
           }}>

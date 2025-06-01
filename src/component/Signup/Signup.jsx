@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Signup.css"
+import { MdOutlinePersonAddAlt1 } from "react-icons/md";
 
 function Signup() {
   return (
@@ -28,7 +29,7 @@ function Signup() {
         <input type="password" name="" id="conpass1" required/>
         </div>
 
-        <button id='signupbtn'>Signup</button>
+        <button id='signupbtn'>Signup<MdOutlinePersonAddAlt1 /></button>
 
       </form>
 
